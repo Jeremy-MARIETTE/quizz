@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="questions.js"></script>
+    <title>Quizz</title>
+</head>
+
+<body>
+
+    <h1>QUIZZ</h1>
+    <!-- https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp -->
+
+    <form action="" method="post">
+
+        <fieldset>
+            <label for="name">Nom</label><br>
+            <input type="text" name="name" id="name" placeholder="nom"><br>
+
+            <label for="prenom">Prénom</label><br>
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom"><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" name="email" pattern=".+@globex\.com" id="email" placeholder="email"><br>
+        </fieldset>
+
+        <fieldset>
+            <div class="container">
+                <h3>Score : <span id="score"></span></h3>
+                <h3>Question : <span id="nb_questions"></span></h3>
+            </div>
+            <label id="question" for="question"><h2>Quand a eu lieu la révolutio Française ?</h2></label>
+            <div>
+                <span>
+                   
+                    <input class="reponse" type="button" value="Reponse 1" onclick="reponse(1);">
+                    <input class="reponse" type="button" value="Reponse 2" onclick="reponse(2);">
+                    <br>
+                    <input class="reponse" type="button" value="Reponse 3" onclick="reponse(3);">
+                    <input class="reponse" type="button" value="Reponse 4" onclick="reponse(4);">
+                    
+                </span>
+
+            </div>
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
