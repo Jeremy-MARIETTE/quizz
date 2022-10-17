@@ -1,33 +1,39 @@
 body {
-    background-color: antiquewhite;
+    background-color: #121212;
 }
 
 h1 {
+    font-size: 60px;
     text-align: center;
+    color: #E50914;
 }
 
 h2 {
     text-align: center;
+    color: #808080;
 }
 
 fieldset {
-    border: solid 2px gray;
+    border: solid 2px #808080;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
 .container h3 {
+    color: #808080;
     display: inline-block;
     width: 40%;
 }
 
 label {
+    color: #808080;
     font-weight: bold;
 }
 
 input {
     width: 20%;
     height: 20px;
+    background-color: #FFFFFF;
     margin-bottom: 10px;
 }
 
@@ -37,10 +43,12 @@ form {
 }
 
 .reponse {
+    color: #FFFFFF;
+    background-color: #E50914;
     font-size: 20px;
     width: 35%;
     height: 60px;
     margin-left: 10%;
-    border: solid 1px gray;
+    border: solid 1px #808080;
     border-radius: 10px;
 }
