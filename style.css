@@ -22,7 +22,9 @@ fieldset {
 .container h3 {
     color: #808080;
     display: inline-block;
+    font-size: 30px;
     width: 40%;
+    margin-left: 70px;
 }
 
 label {
