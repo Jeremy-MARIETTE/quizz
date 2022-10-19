@@ -1,9 +1,6 @@
 body {
+    background-color: antiquewhite;
     background-color: #121212;
-}
-#wrapper{
-    width: 100%;
-    display: grid;
 }
 
 h1 {
@@ -18,15 +15,21 @@ h2 {
 }
 
 fieldset {
+    border: solid 2px gray;
     border: solid 2px #808080;
     border-radius: 10px;
     margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.container {
+    margin-left: 20%;
 }
 
 .container h3 {
     color: #808080;
     display: inline-block;
-    font-size: 30px;
     width: 40%;
 }
 
@@ -37,17 +40,11 @@ label {
 }
 
 input {
-    width: 60%;
+    width: 40%;
     height: 20px;
     background-color: #FFFFFF;
-    margin-left: 20%;
-    margin-right: 20%;
     margin-bottom: 10px;
-}
-
-form {
-    width: 50%;
-    padding-left: 20%;
+    margin-left: 20%;
 }
 
 .reponse {
@@ -57,28 +54,28 @@ form {
     width: 35%;
     height: 60px;
     margin-left: 10%;
+    border: solid 1px gray;
     border: solid 1px #808080;
     border-radius: 10px;
 }
 
 @media (max-width:800px) {
-     .reponse{
-       /*grid-template-columns: repeat(2,1fr);*/
-       width: 100%;
-       margin-left: 0%;
-    }
-    .container h3{
+    .reponse {
+        /*grid-template-columns: repeat(2,1fr);*/
         width: 100%;
-        display: block;
-        margin-left: 0%; 
-    }
-    label{
         margin-left: 0%;
     }
-    #contact input{
+    .container h3 {
+        width: 100%;
+        display: block;
+        margin-left: 0%;
+    }
+    label {
+        margin-left: 0%;
+    }
+    #contact input {
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
     }
-    
 }

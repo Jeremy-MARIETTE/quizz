@@ -14,30 +14,30 @@
 
     <h1>QUIZZ</h1>
     <!-- https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp -->
-<div id="wrapper">
-    <form action="" method="post">
+    <div id="wrapper">
+        <form action="" method="post">
 
-        <fieldset>
-            <div id="contact">
-                <label for="name">Nom</label><br>
-                <input type="text" name="name" id="name" placeholder="nom"><br>
+            <fieldset>
+                <div id="contact">
+                    <label for="name">Nom</label><br>
+                    <input type="text" name="name" id="name" placeholder="nom"><br>
 
-                <label for="prenom">Prénom</label><br>
-                <input type="text" name="prenom" id="prenom" placeholder="Prénom"><br>
+                    <label for="prenom">Prénom</label><br>
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom"><br>
 
-                <label for="email">Email</label><br>
-                <input type="email" name="email" pattern=".+@globex\.com" id="email" placeholder="email"><br>
-            </div>
-        </fieldset>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" pattern=".+@globex\.com" id="email" placeholder="email"><br>
+                </div>
+            </fieldset>
 
-        <fieldset>
-            <div class="container">
-                <h3 class="card">Score : <span id="score"></span></h3>
-                <h3 class="card">Question : <span id="number_questions"></span> / <span id="nb_questions"></span></h3>
-            </div>
-            <label id="question" for="question"><h2>Quand a eu lieu la révolution Française ?</h2></label>
-            <div>
-                <span>
+            <fieldset>
+                <div class="container">
+                    <h3 class="card">Score : <span id="score"></span></h3>
+                    <h3 class="card">Question : <span id="number_questions"></span> / <span id="nb_questions"></span></h3>
+                </div>
+                <label id="question" for="question"><h2>Quand a eu lieu la révolution Française ?</h2></label>
+
+                <span id="bouton">
                    
                     <input class="reponse" type="button" value="Reponse 1" onclick="reponse(1);">
                     <input class="reponse" type="button" value="Reponse 2" onclick="reponse(2);">
@@ -47,12 +47,12 @@
                     
                 </span>
 
-            </div>
 
-        </fieldset>
 
-    </form>
-</div>
+            </fieldset>
+
+        </form>
+    </div>
 </body>
 
 </html>
