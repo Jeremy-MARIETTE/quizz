@@ -38,7 +38,7 @@ function init() {
     let codeHTML = "<table>";
 
     json.forEach(function(item, index) {
-        //	codeHTML+="<tr id=\"employee"+index+"\">";
+        
         codeHTML += `<tr id="json${index}">`
         codeHTML += `<td>${item.question}</td>`;
         codeHTML += `<td>${item.choix[0]}</td>`;
@@ -46,20 +46,17 @@ function init() {
         codeHTML += `<td></td>`;
         codeHTML += "</tr>"
 
-        /** */
+      
         codeHTML += `<label id="question" for="question"><h2>${item.question}</h2></label>`;
 
-        codeHTML += `<<input class="reponse" type="button" value="${item.choix[0]}" onclick="reponse(1);">`;
-        codeHTML += `<<input class="reponse" type="button" value="${item.choix[1]}" onclick="reponse(1);">`;
+        codeHTML += `<input class="reponse" type="button" value="${item.choix[0]}" onclick="reponse(1);">`;
+        codeHTML += `<input class="reponse" type="button" value="${item.choix[1]}" onclick="reponse(1);">`;
 
-        codeHTML += `<textarea class="form-control" name="justify" id="" cols="100" rows="10" placeholder="Justifier votre réponse"></textarea>`;
-
-
-        /** */
-
+        codeHTML += `<section>${item.remarque}</section>`;
 
     });
     codeHTML += "</table>";
+    codeHTML +='<button class="bouton">Vérifier</button>';
     console.log(codeHTML);
 
     document.getElementById('main').insertAdjacentHTML('afterbegin', codeHTML);

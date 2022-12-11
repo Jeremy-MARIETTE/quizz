@@ -26,6 +26,10 @@ fieldset {
 textarea {
     margin-left: 20%;
 }
+section{
+    color:white;
+    margin-left: 20%;
+}
 
 .container {
     margin-left: 20%;
@@ -56,6 +60,17 @@ input {
     background-color: #E50914;
     font-size: 20px;
     width: 35%;
+    height: 60px;
+    margin-left: 10%;
+    border: solid 1px gray;
+    border: solid 1px #808080;
+    border-radius: 10px;
+}
+.bouton {
+    color: #FFFFFF;
+    background-color: #4be509;
+    font-size: 20px;
+    width: 80%;
     height: 60px;
     margin-left: 10%;
     border: solid 1px gray;
