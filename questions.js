@@ -1,27 +1,27 @@
 json = [{
 
     "question": "JSON est t-il un language de programmation ?",
-    "choix": ["oui", "non"],
+    "choix": ["Vrai", "Faux"],
     "reponse": 1,
     "remarque ": "JSON est un format de données textuel dérivé de la notation des objets du langage JavaScript"
 }, {
     "question": "Javascript permet t-il de manipuler de DOM ?",
-    "choix": ["oui", "non"],
+    "choix": ["Vrai", "Faux"],
     "reponse": 0,
     "remarque": "Il s’attache au nœud du DOM et peut agir en lecture et écriture."
 }, {
     "question": "Javascript est-il un langage orienté objet ?",
-    "choix": ["oui", "non"],
+    "choix": ["Vrai", "Faux"],
     "reponse": 0,
     "remarque": "Il permet de créer des classes qui seront instanciées en objets."
 }, {
     "question": "JavaScript permet-il de faire des sauvegardes des données sur le disque dur client ?",
-    "choix": ["oui", "non"],
+    "choix": ["Vrai", "Faux"],
     "reponse": 0,
     "remarque": "La fonction  localstorage permet d’ecrire les données de façon persistante sur le disque dur"
 }, {
     "question": "Depuis Javascript ES6, pour la bonne pratique en matière de la déclaration des variables, doit-on continuer à utiliser var ?",
-    "choix": ["oui", "non"],
+    "choix": ["Vrai", "Faux"],
     "reponse": 1,
     "remarque": "Il faut utiliser let ou const pour mieux controler la portée des variables"
 
