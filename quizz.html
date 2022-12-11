@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="questions.js"></script>
     <title>Quizz</title>
+
 </head>
 
 <body>
 
     <h1>QUIZZ</h1>
+    <p id="titre"></p>
     <!-- https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp -->
     <div id="wrapper">
         <form action="" method="post">
@@ -39,11 +40,11 @@
 
                 <span id="bouton">
                    
-                    <input class="reponse" type="button" value="Reponse 1" onclick="reponse(1);">
-                    <input class="reponse" type="button" value="Reponse 2" onclick="reponse(2);">
+                    <input class="reponse" type="button" value="Vrai" onclick="reponse(1);">
+                    <input class="reponse" type="button" value="Faux" onclick="reponse(2);">
+                    <textarea class="form-control" name="justify" id="" cols="100" rows="10" placeholder="Justifier votre réponse"></textarea>
                     <br>
-                    <input class="reponse" type="button" value="Reponse 3" onclick="reponse(3);">
-                    <input class="reponse" type="button" value="Reponse 4" onclick="reponse(4);">
+           
                     
                 </span>
 
@@ -54,5 +55,6 @@
         </form>
     </div>
 </body>
+<script src="questions.js"></script>
 
 </html>
