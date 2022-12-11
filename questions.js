@@ -63,41 +63,6 @@ function init() {
 } //fin func
 
 
-/* ----------- AJOUT A MODIFIER ------------- */
-
-/* Affichage première question */
-document.getElementById("question").innerHTML = json[0].question;
-
-/* Initialisation des scores et compteur de questions */
-document.getElementById("score").innerHTML = 0;
-document.getElementById("number_questions").innerHTML = 1;
-
-/* Fonction réponse */
-
-function reponse (bouton){
-    
-    i = 0;
-
-   let reponse = json[i].reponse;
-
-        if (bouton == reponse){
-            document.getElementById("question").innerHTML = json[i+1].question;
-            reponse = json[i+1].reponse;
-
-            /* incrémentation du score + compteur de question => mettre limite ! */
-           document.getElementById("score").innerHTML ++;
-           document.getElementById("number_questions").innerHTML ++;
-        }
-
-        else {
-            document.getElementById("question").innerHTML = json[i+1].question;
-            reponse = json[i+1].reponse;
-
-            /* Incrémentation du compteur de question */
-            document.getElementById("number_questions").innerHTML ++;
-        }
-
-}
 
 
 
