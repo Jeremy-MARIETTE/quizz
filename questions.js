@@ -33,26 +33,27 @@ document.onreadystatechange = function() {
         init();
     }
 }
+function remarque(id){
+    alert("Modification CSS. "+id)
 
+    var e = document.getElementById(id);
+    e.style.visibility= 'visible';
+}
 function init() {
     let codeHTML = "<table>";
 
     json.forEach(function(item, index) {
         
-        codeHTML += `<tr id="json${index}">`
-        codeHTML += `<td>${item.question}</td>`;
-        codeHTML += `<td>${item.choix[0]}</td>`;
-        codeHTML += `<td>${item.choix[1]}</td>`;
-        codeHTML += `<td></td>`;
-        codeHTML += "</tr>"
+    
+        codeHTML += `<label id="question" for="question"><h2>${item.question}</h2>${index}</label>`;
 
-      
-        codeHTML += `<label id="question" for="question"><h2>${item.question}</h2></label>`;
+        codeHTML += `<label class="choixReponse" for="choixV">${item.choix[0]}</label>`;
+        codeHTML += `<input class="reponse" id="choixV" type="radio" name="${index}" value="${item.choix[0]}" onclick="myFunction(${index})" >`;
 
-        codeHTML += `<input class="reponse" type="button" value="${item.choix[0]}" onclick="reponse(1);">`;
-        codeHTML += `<input class="reponse" type="button" value="${item.choix[1]}" onclick="reponse(1);">`;
+        codeHTML += `<label class="choixReponse" for="choixF">${item.choix[1]}</label>`;
+        codeHTML += `<input class="reponse" id="choixF" type="radio" name="${index}" value="${item.choix[1]}" onclick="myFunction(${index})" >`;
 
-        codeHTML += `<section>${item.remarque}</section>`;
+        codeHTML += `<section id="remarque${index}">${item.remarque}</section>`;
 
     });
     codeHTML += "</table>";
@@ -60,8 +61,18 @@ function init() {
     console.log(codeHTML);
 
     document.getElementById('main').insertAdjacentHTML('afterbegin', codeHTML);
+
 } //fin func
 
+
+function myFunction(id) {
+    var x = document.getElementById("remarque"+id);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
 
 
