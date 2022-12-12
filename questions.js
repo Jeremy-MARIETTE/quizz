@@ -47,10 +47,10 @@ function init() {
     
         codeHTML += `<label id="question" for="question"><h2>${item.question}</h2>${index}</label>`;
 
-        codeHTML += `<label class="choixReponse" for="choixV">${item.choix[0]}</label>`;
+        codeHTML += `<label class="choixReponse" for="choixV" onclick="myFunction(${index})">${item.choix[0]}</label>`;
         codeHTML += `<input class="reponse" id="choixV" type="radio" name="${index}" value="${item.choix[0]}" onclick="myFunction(${index})" >`;
 
-        codeHTML += `<label class="choixReponse" for="choixF">${item.choix[1]}</label>`;
+        codeHTML += `<label class="choixReponse" for="choixF" onclick="myFunction(${index})">${item.choix[1]}</label>`;
         codeHTML += `<input class="reponse" id="choixF" type="radio" name="${index}" value="${item.choix[1]}" onclick="myFunction(${index})" >`;
 
         codeHTML += `<section id="remarque${index}">${item.remarque}</section>`;

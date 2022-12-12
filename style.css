@@ -29,6 +29,7 @@ textarea {
 section{
     color:white;
     margin-left: 20%;
+    display: none;
 }
 
 .container {
